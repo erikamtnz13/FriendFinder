@@ -18,7 +18,7 @@
       <hr>
       <h2>Answer a few basic questions.</h2>
       <h2>Then find the friend with the greatest compatibility!</h2>
-      <a href="/add"><button type="button" class="btn btn-danger btn-lg" style = "background-color:steelblue; border-color: steelblue; height: 60px"><span class="glyphicon glyphicon-list"></span> Go to survey</button></a>
+      <a href="/survey"><button type="button" class="btn btn-danger btn-lg" id="search-btn" style = "background-color:steelblue; border-color: steelblue; height: 60px"><span class="glyphicon glyphicon-list"></span> Go to survey</button></a>
     </div>
     <div>
         <a href="http://">API Friends List |</a> <a href="http://">GitHub Repo</a>
@@ -26,8 +26,8 @@
 
     
   <script type="text/javascript">
-    $("#search-btn").on("click", function() {
-      var searchedCharacter = $("#character-search").val().trim();
+    $(".search-btn").on("click", function() {
+      var survey = $("#character-search").val().trim();
 
       searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
 
